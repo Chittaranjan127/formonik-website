@@ -388,9 +388,9 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; line-height: 1.0
 .hero-wrap { position: relative; z-index: 1; width: 100%; display: grid; }
 .hero-panel { grid-area: 1 / 1; max-width: 720px; align-self: center; }
 .hero-panel:not(.active) { display: none; } /* base: only first panel */
-.hero-panel h1 { color: #fff; margin-top: 1.4rem; font-size: clamp(2.3rem, 5.4vw, 4.5rem); font-weight: 700;
+.hero-panel h1, .hero-panel .hero-h { color: #fff; margin-top: 1.4rem; font-family: var(--display); font-size: clamp(2.3rem, 5.4vw, 4.5rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.06;
   text-shadow: 0 2px 30px rgba(8,11,18,.45), 0 1px 4px rgba(8,11,18,.55); }
-.hero-panel h1 .hl { color: var(--amber-2); }
+.hero-panel h1 .hl, .hero-panel .hero-h .hl { color: var(--amber-2); }
 .hero-panel .lead { color: #e7ecf4; margin-top: 1.4rem; max-width: 52ch;
   text-shadow: 0 1px 16px rgba(8,11,18,.6), 0 1px 3px rgba(8,11,18,.6); }
 .hero-stage.scrub .hero-panel .eyebrow.on-dark { text-shadow: 0 1px 10px rgba(8,11,18,.6); }
